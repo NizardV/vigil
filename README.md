@@ -1,72 +1,74 @@
-﻿# WatchLLM 🔍
+# Vigil
 
-Système de veille technologique automatisé avec scoring LLM, feedback loop et déploiement Docker.
+Automated tech watch system with LLM scoring, feedback loop and configurable webhook notifications.
 
-## Stack technique
+> Systeme de veille technologique automatise avec scoring LLM, boucle de feedback et notifications configurables.
 
-| Couche | Technologie |
+## Stack
+
+| Layer | Technology |
 |---|---|
-| Collecte | n8n + feedparser |
+| Collector | n8n + feedparser |
 | Backend | FastAPI (Python 3.12) |
-| File d''attente | Celery + Redis |
+| Queue | Celery + Redis |
 | LLM | Gemini Flash (Google) |
-| Embeddings | sentence-transformers (MiniLM) |
-| Base de données | PostgreSQL + pgvector |
-| Frontend | Streamlit |
-| Déploiement | Docker Compose (VPS OVH) |
-| Notifications | Discord Webhooks |
+| Embeddings | sentence-transformers (MiniLM-L12) |
+| Database | PostgreSQL + pgvector |
+| Dashboard | Streamlit |
+| Deployment | Docker Compose (OVH VPS) |
+| Notifications | Configurable webhooks (Discord, Slack...) |
 
 ## Architecture
 
 ```
-Sources RSS → n8n (cron) → FastAPI → Celery Worker
-                                          ├── Gemini Flash (scoring 1-10)
-                                          ├── pgvector (embeddings)
-                                          └── PostgreSQL
-                                               ↓
-                                         Digest quotidien
-                                               ↓
-                                      Discord Webhook
-                                               +
-                                      Streamlit Dashboard
-                                      (config + feedback 👍👎)
+RSS Sources -> n8n (cron) -> FastAPI -> Celery Worker
+                                            |-- Gemini Flash (score 1-10)
+                                            |-- pgvector (embeddings)
+                                            └-- PostgreSQL
+                                                 |
+                                           Daily digest
+                                                 |
+                                        Webhook notifications
+                                                 +
+                                        Streamlit Dashboard
+                                        (sources config + feedback)
 ```
 
-## Démarrage
+## Getting started
 
 ```bash
-# 1. Cloner le projet
-git clone https://github.com/NizardV/watchllm.git
-cd watchllm
+# 1. Clone
+git clone https://github.com/NizardV/vigil.git
+cd vigil
 
-# 2. Configurer les variables d''environnement
+# 2. Configure environment
 cp .env.example .env
-# Remplir .env avec vos clés (Gemini API key, Discord webhook, etc.)
+# Fill in your keys (Gemini API key, webhook URLs, etc.)
 
-# 3. Lancer tous les services
+# 3. Start all services
 docker compose up -d
 
-# 4. Accéder aux interfaces
-# API docs :     http://localhost:8000/docs
-# Dashboard :    http://localhost:8501
-# n8n :          http://localhost:5678
+# 4. Access
+# API docs  : http://localhost:8000/docs
+# Dashboard : http://localhost:8501
+# n8n       : http://localhost:5678
 ```
 
-## Fonctionnalités
+## Features
 
-- **Collecte automatique** : sources RSS configurables par thème, toutes les 2h
-- **Scoring LLM** : chaque article reçoit un score de pertinence 1-10 + résumé en français
-- **Embeddings pgvector** : recherche sémantique entre articles similaires
-- **Feedback loop** : les 👍/👎 influencent le prompt LLM pour affiner le scoring
-- **Digest quotidien** : synthèse des meilleurs articles envoyée sur Discord chaque matin
-- **Dashboard Streamlit** : visualisation des scores, gestion des sources, webhooks
+- **Automatic collection** — configurable RSS sources per theme, every 2 hours
+- **LLM scoring** — each article gets a relevance score (1-10) + summary in French
+- **Vector search** — pgvector embeddings for semantic similarity between articles
+- **Feedback loop** — thumbs up/down influence the LLM prompt to refine future scoring
+- **Daily digest** — top articles sent every morning via webhook
+- **Streamlit dashboard** — score visualization, source management, webhook config
 
-## Variables d''environnement
+## Environment variables
 
 | Variable | Description |
 |---|---|
-| `GEMINI_API_KEY` | Clé API Google Gemini |
-| `DISCORD_WEBHOOK_URL` | Webhook Discord par défaut |
-| `POSTGRES_PASSWORD` | Mot de passe PostgreSQL |
-| `DIGEST_HOUR` | Heure d''envoi du digest (UTC) |
-
+| `GEMINI_API_KEY` | Google Gemini API key |
+| `DISCORD_WEBHOOK_URL` | Default webhook URL |
+| `POSTGRES_PASSWORD` | PostgreSQL password |
+| `DIGEST_HOUR` | Digest send time (UTC hour) |
+| `N8N_PASSWORD` | n8n admin password |
