@@ -2,7 +2,7 @@
 
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: watchllm_postgres
+    container_name: vigil_postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
@@ -20,7 +20,7 @@
 
   redis:
     image: redis:7-alpine
-    container_name: watchllm_redis
+    container_name: vigil_redis
     restart: unless-stopped
     volumes:
       - redis_data:/data
@@ -32,7 +32,7 @@
 
   backend:
     build: ./backend
-    container_name: watchllm_backend
+    container_name: vigil_backend
     restart: unless-stopped
     env_file: .env
     ports:
@@ -47,7 +47,7 @@
 
   celery_worker:
     build: ./backend
-    container_name: watchllm_celery
+    container_name: vigil_celery
     restart: unless-stopped
     env_file: .env
     command: celery -A workers.tasks worker --loglevel=info --concurrency=2
@@ -61,7 +61,7 @@
 
   celery_beat:
     build: ./backend
-    container_name: watchllm_beat
+    container_name: vigil_beat
     restart: unless-stopped
     env_file: .env
     command: celery -A workers.tasks beat --loglevel=info
@@ -72,7 +72,7 @@
 
   streamlit:
     build: ./streamlit
-    container_name: watchllm_streamlit
+    container_name: vigil_streamlit
     restart: unless-stopped
     env_file: .env
     ports:
@@ -84,7 +84,7 @@
 
   n8n:
     image: n8nio/n8n:latest
-    container_name: watchllm_n8n
+    container_name: vigil_n8n
     restart: unless-stopped
     environment:
       N8N_BASIC_AUTH_ACTIVE: "true"
@@ -96,6 +96,21 @@
     volumes:
       - n8n_data:/home/node/.n8n
       - ./n8n/workflows:/home/node/.n8n/workflows
+
+  nginx:
+    image: nginx:alpine
+    container_name: vigil_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - backend
+      - streamlit
+      - n8n
 
 volumes:
   postgres_data:
