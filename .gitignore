@@ -13,3 +13,4 @@ postgres_data/
 redis_data/
 n8n_data/
 
+backend/celerybeat-schedule
