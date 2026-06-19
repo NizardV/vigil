@@ -7,8 +7,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_BACKEND: ghcr.io/${{ github.repository_owner }}/vigil-backend
-  IMAGE_STREAMLIT: ghcr.io/${{ github.repository_owner }}/vigil-streamlit
+  IMAGE_BACKEND: ghcr.io/nizardv/vigil-backend
+  IMAGE_STREAMLIT: ghcr.io/nizardv/vigil-streamlit
 
 jobs:
   build-and-push:
