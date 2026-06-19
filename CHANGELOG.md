@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/NizardV/vigil/compare/v0.1.0...v0.1.1) (2026-06-19)
+
+
+### Bug Fixes
+
+* trigger deploy on release published ([3949a4a](https://github.com/NizardV/vigil/commit/3949a4a44baf4681ae7ff418789ad3f0aa7e09e0))
+* trigger deploy on release published ([8159ba3](https://github.com/NizardV/vigil/commit/8159ba33c99fa69f7c01dc67381ce996e311241e))
+
 ## 0.1.0 (2026-06-19)
 
 
