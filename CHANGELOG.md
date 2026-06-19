@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/NizardV/vigil/compare/v0.2.0...v0.3.0) (2026-06-19)
+
+
+### Features
+
+* use torch CPU-only to reduce image size ([6f9b8df](https://github.com/NizardV/vigil/commit/6f9b8df63cf92913506c94db3e827fb0fd922425))
+
+
+### Bug Fixes
+
+* codeql-action v4 and security-events permission ([3a84f30](https://github.com/NizardV/vigil/commit/3a84f3022f2a79ec16a4483765e34f7e14e40d45))
+
 ## [0.2.0](https://github.com/NizardV/vigil/compare/v0.1.3...v0.2.0) (2026-06-19)
 
 
