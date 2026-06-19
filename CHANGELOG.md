@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/NizardV/vigil/compare/v0.1.2...v0.1.3) (2026-06-19)
+
+
+### Bug Fixes
+
+* add actions write permission for workflow dispatch ([9a16bad](https://github.com/NizardV/vigil/commit/9a16bad50fb0b235f2849adf9b4554531637d63e))
+* add actions write permission for workflow dispatch ([38083d6](https://github.com/NizardV/vigil/commit/38083d6fe70b8806a466050d4b59492725eee772))
+
 ## [0.1.2](https://github.com/NizardV/vigil/compare/v0.1.1...v0.1.2) (2026-06-19)
 
 
