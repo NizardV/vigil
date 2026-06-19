@@ -5,7 +5,8 @@ on:
     tags:
       - 'v*.*.*'
   release:
-    types: [published]
+    types: [published, created]
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
