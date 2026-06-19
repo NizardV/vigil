@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/NizardV/vigil/compare/v0.1.3...v0.2.0) (2026-06-19)
+
+
+### Features
+
+* upload Trivy scan results to GitHub Security tab ([0d99ef5](https://github.com/NizardV/vigil/commit/0d99ef5a7e675eda36d11de3fb6aa7a7556c35bc))
+* upload Trivy scan results to GitHub Security tab ([ff47cd2](https://github.com/NizardV/vigil/commit/ff47cd2376cabf635f6512b889492bd9582fd14a))
+
 ## [0.1.3](https://github.com/NizardV/vigil/compare/v0.1.2...v0.1.3) (2026-06-19)
 
 
