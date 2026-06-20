@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/NizardV/vigil/compare/v0.4.0...v0.4.1) (2026-06-20)
+
+
+### Bug Fixes
+
+* gestion des sessions par les query params ([5eb23d2](https://github.com/NizardV/vigil/commit/5eb23d2ebcc345146bba1e0da833af3bf578aa14))
+* gestion des sessions par les query params ([8182d73](https://github.com/NizardV/vigil/commit/8182d733d93ca400ea831b15d0d572ffb4453106))
+
 ## [0.4.0](https://github.com/NizardV/vigil/compare/v0.3.0...v0.4.0) (2026-06-20)
 
 
