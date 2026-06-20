@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.3](https://github.com/NizardV/vigil/compare/v0.4.2...v0.4.3) (2026-06-20)
+
+
+### Bug Fixes
+
+* remove unused imports ([a7c0146](https://github.com/NizardV/vigil/commit/a7c0146d9f17c31370e91f2a986169f36659b874))
+* remove unused imports ([67638f1](https://github.com/NizardV/vigil/commit/67638f1bb6e1121536b7179249505cbbfeeab4d1))
+
 ## [0.4.2](https://github.com/NizardV/vigil/compare/v0.4.1...v0.4.2) (2026-06-20)
 
 
