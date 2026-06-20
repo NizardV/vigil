@@ -1,5 +1,41 @@
 # Changelog
 
+## [0.4.0](https://github.com/NizardV/vigil/compare/v0.3.0...v0.4.0) (2026-06-20)
+
+
+### Features
+
+* add auth models and dependencies ([cf20cd9](https://github.com/NizardV/vigil/commit/cf20cd93d99f97ef62a6aef017d6cd713211a063))
+* add auth service and routes ([7ee678d](https://github.com/NizardV/vigil/commit/7ee678df27bcd1b1f7d72aa0d0ba991ea2824160))
+* add Streamlit auth UI with login, register and TOTP ([73da0a5](https://github.com/NizardV/vigil/commit/73da0a520b69f20661848b0374dd9ae83411739a))
+* add TOTP settings page and fix user email in session ([108afa8](https://github.com/NizardV/vigil/commit/108afa8747c40625ef54535daccd21a10693415a))
+* implement TOTP enable/disable ([eb6b48d](https://github.com/NizardV/vigil/commit/eb6b48d15872925ae831d2c6b4630da7f05d441e))
+* persist session with cookies ([9577b1d](https://github.com/NizardV/vigil/commit/9577b1d449b0c09a14f868a5bff5c61b91901154))
+* refactor Streamlit navigation with app.py entry point and email confirmation page ([9b71089](https://github.com/NizardV/vigil/commit/9b71089e9007136d2d863e350d2cb3bedf37688b))
+* session persistence via Redis httpOnly cookie and streamlit-js-eval ([4e7bbe3](https://github.com/NizardV/vigil/commit/4e7bbe3b177178df4486f94cd02a9060c538495c))
+
+
+### Bug Fixes
+
+* changed email confirmation path ([f6b7d44](https://github.com/NizardV/vigil/commit/f6b7d443cc215803ec5aa0c42db3d1cdf2e64989))
+* cookie instanciation duplication ([4993153](https://github.com/NizardV/vigil/commit/4993153c234d07a57798dafd0578f0482f14c64d))
+* cookie management ([ba16aba](https://github.com/NizardV/vigil/commit/ba16aba7e1f1fe376f295e3a918c8ab89dc0bc9b))
+* cookie set use max age instead of expires at ([bfa0dee](https://github.com/NizardV/vigil/commit/bfa0dee591bfe79d9f00ffe448dc7f3b5bac22d7))
+* library bycrypt auth changed due to passlib bug on python 3.12 ([3a0a784](https://github.com/NizardV/vigil/commit/3a0a784aee35aa07233e33838f739d45b303e8bd))
+* migration - clear data before adding user_id NOT NULL columns ([7ed9dcc](https://github.com/NizardV/vigil/commit/7ed9dcc696488495b01181da37a044a598edecfc))
+* migration - clear data before adding user_id NOT NULL columns updated ([46952d8](https://github.com/NizardV/vigil/commit/46952d8400ec81d49b18a2e522c8cdb249714101))
+* remove require_auth from pages, handled by app.py navigation ([eb41f84](https://github.com/NizardV/vigil/commit/eb41f84bb51dd1127f4b2341608e570c48ee0598))
+* rename pages to lowercase ([2704851](https://github.com/NizardV/vigil/commit/27048510ddfe0bc1b8ab898c175351e16af03c55))
+* session restore for cookies ([205f3d3](https://github.com/NizardV/vigil/commit/205f3d3ac5211340d8968ab9baecfd50d489f415))
+* session state ([eebddea](https://github.com/NizardV/vigil/commit/eebddead8e59c83b1817f4b264a649cddc8bca98))
+* session time management ([732f8e2](https://github.com/NizardV/vigil/commit/732f8e224d4d267eb1fb89c09bf567498ef9381d))
+* set cookie removed ([ebe542d](https://github.com/NizardV/vigil/commit/ebe542dfe46f943f398c45f1badabbe985fbb53d))
+* single CookieController instance to avoid session state conflict ([8904be5](https://github.com/NizardV/vigil/commit/8904be5e15db6627e39d76b8cfb9cd37deeb71d4))
+* spinner for restoring session ([26ce550](https://github.com/NizardV/vigil/commit/26ce550d78d9421040f9d8ad7cdaa7e7ab622dac))
+* timezone problem in auth service ([e8e632a](https://github.com/NizardV/vigil/commit/e8e632ad3fa7b4f3e2357f1d3b32bf8d8e5b7bde))
+* update version of streamlit for navigation ([86d1efc](https://github.com/NizardV/vigil/commit/86d1efc5bd625669149f2e6b56b58473f815632b))
+* user mail link disabled ([7a4b439](https://github.com/NizardV/vigil/commit/7a4b439efec7618edf932dbb33623d2e5df5676e))
+
 ## [0.3.0](https://github.com/NizardV/vigil/compare/v0.2.0...v0.3.0) (2026-06-19)
 
 
