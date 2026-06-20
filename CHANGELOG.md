@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.2](https://github.com/NizardV/vigil/compare/v0.4.1...v0.4.2) (2026-06-20)
+
+
+### Bug Fixes
+
+* remove non-existent get_session_id import ([9cde5d3](https://github.com/NizardV/vigil/commit/9cde5d38666fc4cdccca10b3bea8d84e20f32344))
+* remove non-existent get_session_id import ([8ada883](https://github.com/NizardV/vigil/commit/8ada8833146ccdd1a1e53cea02873d2aa0e459a5))
+
 ## [0.4.1](https://github.com/NizardV/vigil/compare/v0.4.0...v0.4.1) (2026-06-20)
 
 
