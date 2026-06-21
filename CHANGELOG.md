@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.8.1](https://github.com/NizardV/vigil/compare/v0.8.0...v0.8.1) (2026-06-21)
+
+
+### Bug Fixes
+
+* remove invalid tuple import and optimize CI/CD pipeline ([b881a38](https://github.com/NizardV/vigil/commit/b881a384be56f1ffe70e48a1ba13ef461afbb09e))
+* remove invalid tuple import from typing ([2fdb2ba](https://github.com/NizardV/vigil/commit/2fdb2ba8ec97f01d34295f51e1e281bde56564d7))
+* remove invalid tuple import from typing ([49eab24](https://github.com/NizardV/vigil/commit/49eab24136beddb5ccb93817dfff80d2d922ce1e))
+
 ## [0.8.0](https://github.com/NizardV/vigil/compare/v0.7.1...v0.8.0) (2026-06-21)
 
 
