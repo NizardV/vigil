@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0](https://github.com/NizardV/vigil/compare/v0.6.0...v0.7.0) (2026-06-21)
+
+
+### Features
+
+* add TOTP login flow ([deb0025](https://github.com/NizardV/vigil/commit/deb00257b0f4d065ee5ac72a65c768c25c385614))
+* add TOTP login flow ([348093e](https://github.com/NizardV/vigil/commit/348093e95d150b05f8c584724d69f50865ccee6d))
+
 ## [0.6.0](https://github.com/NizardV/vigil/compare/v0.5.0...v0.6.0) (2026-06-21)
 
 
