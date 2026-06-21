@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.0](https://github.com/NizardV/vigil/compare/v0.7.1...v0.8.0) (2026-06-21)
+
+
+### Features
+
+* add automatic source type detection for YouTube, Reddit, GitHub, HN ([0ebac36](https://github.com/NizardV/vigil/commit/0ebac36cfe157a78c59522dbf8a3b44721c104dd))
+* add automatic source type detection for YouTube, Reddit, GitHub… ([69779cd](https://github.com/NizardV/vigil/commit/69779cd3a8d93ebafe141ca99ec8cc88de7df40e))
+
 ## [0.7.1](https://github.com/NizardV/vigil/compare/v0.7.0...v0.7.1) (2026-06-21)
 
 
