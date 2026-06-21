@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/NizardV/vigil/compare/v0.5.0...v0.6.0) (2026-06-21)
+
+
+### Features
+
+* add email OTP login flow ([ff2d59f](https://github.com/NizardV/vigil/commit/ff2d59f19919ddae2d791ed72259c6804c1b8735))
+* add email OTP login flow ([e9316e0](https://github.com/NizardV/vigil/commit/e9316e0ac54f4ccb04b101427a794923ec79f677))
+
 ## [0.5.0](https://github.com/NizardV/vigil/compare/v0.4.4...v0.5.0) (2026-06-21)
 
 
