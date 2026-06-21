@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/NizardV/vigil/compare/v0.4.4...v0.5.0) (2026-06-21)
+
+
+### Features
+
+* move auth to FastAPI login page with httpOnly cookie and nginx … ([a4d6728](https://github.com/NizardV/vigil/commit/a4d6728c08d15d9bd8251e390b5fa0f664b34523))
+* move auth to FastAPI login page with httpOnly cookie and nginx session guard ([e8d63fd](https://github.com/NizardV/vigil/commit/e8d63fdc676083ac926fbeb7bf333220b45dce8a))
+
 ## [0.4.4](https://github.com/NizardV/vigil/compare/v0.4.3...v0.4.4) (2026-06-21)
 
 
