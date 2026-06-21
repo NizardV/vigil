@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/NizardV/vigil/compare/v0.7.0...v0.7.1) (2026-06-21)
+
+
+### Bug Fixes
+
+* trigger release for auth refactor ([359e82f](https://github.com/NizardV/vigil/commit/359e82fdd58be3938383b5e792893bde736bf158))
+
 ## [0.7.0](https://github.com/NizardV/vigil/compare/v0.6.0...v0.7.0) (2026-06-21)
 
 
