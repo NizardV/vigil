@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/NizardV/vigil/compare/v0.4.3...v0.4.4) (2026-06-21)
+
+
+### Bug Fixes
+
+* restore session via nginx X-Session-ID header ([bca9086](https://github.com/NizardV/vigil/commit/bca908693539afccbb40be9ae8b6587569a5e373))
+* restore session via nginx X-Session-ID header ([0ca8b7c](https://github.com/NizardV/vigil/commit/0ca8b7c31e79a131e68659c3774d987ffbacf373))
+
 ## [0.4.3](https://github.com/NizardV/vigil/compare/v0.4.2...v0.4.3) (2026-06-20)
 
 
