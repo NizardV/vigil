@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.0](https://github.com/NizardV/vigil/compare/v0.9.0...v0.10.0) (2026-06-24)
+
+
+### Features
+
+* add process_all_pending task to reprocess unprocessed articles ([3ca5b18](https://github.com/NizardV/vigil/commit/3ca5b18fb994e1b1245019f7794d7fc3dfa9fb91))
+* add process_all_pending task to reprocess unprocessed articles ([d2cc0ab](https://github.com/NizardV/vigil/commit/d2cc0ab4d5f8284315033d9e1a17dd3e15641d1d))
+
 ## [0.9.0](https://github.com/NizardV/vigil/compare/v0.8.7...v0.9.0) (2026-06-24)
 
 
