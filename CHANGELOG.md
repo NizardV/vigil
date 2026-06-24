@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.3](https://github.com/NizardV/vigil/compare/v0.8.2...v0.8.3) (2026-06-24)
+
+
+### Bug Fixes
+
+* correct imports in login_helpers ([0e2f017](https://github.com/NizardV/vigil/commit/0e2f01712904f3cb759b1a1865ecca41c069e119))
+* correct imports in login_helpers ([5326ec9](https://github.com/NizardV/vigil/commit/5326ec94b8a4cb8c92cbdd122d88a1aed948cd31))
+
 ## [0.8.2](https://github.com/NizardV/vigil/compare/v0.8.1...v0.8.2) (2026-06-24)
 
 
