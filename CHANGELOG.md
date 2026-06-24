@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.0](https://github.com/NizardV/vigil/compare/v0.11.0...v0.12.0) (2026-06-24)
+
+
+### Features
+
+* comment on feedback, fix semantic search async timeout ([4439458](https://github.com/NizardV/vigil/commit/443945811c1156be0a9276868bfd5888feebad87))
+* comment on feedback, fix semantic search async timeout ([f770901](https://github.com/NizardV/vigil/commit/f770901137af7bba03f533072ee5839b272ff32d))
+
 ## [0.11.0](https://github.com/NizardV/vigil/compare/v0.10.0...v0.11.0) (2026-06-24)
 
 
