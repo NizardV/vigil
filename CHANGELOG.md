@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.0](https://github.com/NizardV/vigil/compare/v0.10.0...v0.11.0) (2026-06-24)
+
+
+### Features
+
+* add semantic search endpoint and UI ([eccca57](https://github.com/NizardV/vigil/commit/eccca5700081064ecacf616660060128cdd3d35e))
+* add semantic search endpoint and UI ([c5c7692](https://github.com/NizardV/vigil/commit/c5c7692ef39d8b68cca5897377f9563e7df227cc))
+
 ## [0.10.0](https://github.com/NizardV/vigil/compare/v0.9.0...v0.10.0) (2026-06-24)
 
 
