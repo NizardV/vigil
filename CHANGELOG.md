@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.2](https://github.com/NizardV/vigil/compare/v0.8.1...v0.8.2) (2026-06-24)
+
+
+### Bug Fixes
+
+* inject user_id from session into all protected routes ([2f53994](https://github.com/NizardV/vigil/commit/2f5399458dd570624b7b35f5dd8cd0e2405bc2df))
+* inject user_id from session into all protected routes ([e6852b6](https://github.com/NizardV/vigil/commit/e6852b656b34d6482a2b1eadd8ac4db46afb68c7))
+
 ## [0.8.1](https://github.com/NizardV/vigil/compare/v0.8.0...v0.8.1) (2026-06-21)
 
 
