@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.4](https://github.com/NizardV/vigil/compare/v0.8.3...v0.8.4) (2026-06-24)
+
+
+### Bug Fixes
+
+* switch Streamlit auth from Bearer token to session cookie ([c235fdd](https://github.com/NizardV/vigil/commit/c235fdd39755bd5a20586f6961e7fdeef7ffb9f8))
+* switch Streamlit auth from Bearer token to session cookie ([908fca3](https://github.com/NizardV/vigil/commit/908fca31dc7fce3934c2ecc8bf3a225f5b9f9c36))
+
 ## [0.8.3](https://github.com/NizardV/vigil/compare/v0.8.2...v0.8.3) (2026-06-24)
 
 
