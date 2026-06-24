@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.6](https://github.com/NizardV/vigil/compare/v0.8.5...v0.8.6) (2026-06-24)
+
+
+### Bug Fixes
+
+* remove misplaced Streamlit code from services/auth.py ([17475da](https://github.com/NizardV/vigil/commit/17475da88fe341c7dc88d48db887898094d7de4e))
+* remove misplaced Streamlit code from services/auth.py ([28b624b](https://github.com/NizardV/vigil/commit/28b624b653cdbd5110b55a2f96188c78691e87d5))
+
 ## [0.8.5](https://github.com/NizardV/vigil/compare/v0.8.4...v0.8.5) (2026-06-24)
 
 
