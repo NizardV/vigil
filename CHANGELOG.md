@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0](https://github.com/NizardV/vigil/compare/v0.8.7...v0.9.0) (2026-06-24)
+
+
+### Features
+
+* add key_points bullet points to article analysis ([ba97b97](https://github.com/NizardV/vigil/commit/ba97b970402d193a0fe1b0c8a82678ed6f6cd3dd))
+* add key_points bullet points to article analysis ([4e0350f](https://github.com/NizardV/vigil/commit/4e0350fc362a5a479e33037f458defe224baac5b))
+
 ## [0.8.7](https://github.com/NizardV/vigil/compare/v0.8.6...v0.8.7) (2026-06-24)
 
 
