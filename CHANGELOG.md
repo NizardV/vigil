@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.5](https://github.com/NizardV/vigil/compare/v0.8.4...v0.8.5) (2026-06-24)
+
+
+### Bug Fixes
+
+* fetch user info ([599aac4](https://github.com/NizardV/vigil/commit/599aac4ae3e4146cd3c82e2607f60da138ddbb07))
+* fetch user info ([7046864](https://github.com/NizardV/vigil/commit/7046864e1503599dd1b8ec2d504e7a12e866396b))
+
 ## [0.8.4](https://github.com/NizardV/vigil/compare/v0.8.3...v0.8.4) (2026-06-24)
 
 
