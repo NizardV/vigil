@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.7](https://github.com/NizardV/vigil/compare/v0.8.6...v0.8.7) (2026-06-24)
+
+
+### Bug Fixes
+
+* switch LLM prompts to English output ([775f09f](https://github.com/NizardV/vigil/commit/775f09f5fe1cbe40174551393ce364a31f393d26))
+* switch LLM prompts to English output ([36b022f](https://github.com/NizardV/vigil/commit/36b022f78b9a863dfc7989c0bc9d33f43b136f23))
+
 ## [0.8.6](https://github.com/NizardV/vigil/compare/v0.8.5...v0.8.6) (2026-06-24)
 
 
