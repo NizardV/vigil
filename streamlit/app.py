@@ -18,14 +18,17 @@ with st.sidebar:
     st.divider()
     st.markdown("[Logout](/logout)")
 
+# Order of pages in the sidebar (based on user workflow)
 pg = st.navigation([
     st.Page("pages/home.py", title="Home", icon="🏠", default=True),
-    st.Page("pages/articles.py", title="Articles", icon="📰"),
-    st.Page("pages/sources.py", title="Sources", icon="📡"),
-    st.Page("pages/stats.py", title="Stats", icon="📊"),
     st.Page("pages/themes.py", title="Themes", icon="🎯"),
+    st.Page("pages/sources.py", title="Sources", icon="📡"),
+    st.Page("pages/articles.py", title="Articles", icon="📰"),
     st.Page("pages/webhooks.py", title="Webhooks", icon="🔔"),
+    st.Page("pages/digests.py", title="Digests", icon="📨"),
+    st.Page("pages/stats.py", title="Stats", icon="📊"),
     st.Page("pages/settings.py", title="Settings", icon="⚙️"),
+
 ])
 
 pg.run()
