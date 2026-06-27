@@ -1,6 +1,9 @@
 ﻿from datetime import datetime
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
+# ── Global constants ────────────────────────────────────────────
+
+VALID_TAGS = {"relevant", "off-topic", "already-known", "to-dig-deeper", "actionable"}
 
 # ── Themes ──────────────────────────────────────────────
 
@@ -63,10 +66,32 @@ class ArticleOut(BaseModel):
 class FeedbackCreate(BaseModel):
     article_id: int
     rating: int
+    tags: list[str] | None = None
     comment: str | None = None
 
-class FeedbackOut(FeedbackCreate):
+    @field_validator("rating")
+    @classmethod
+    def rating_range(cls, v):
+        if v not in range(1, 6):
+            raise ValueError("Rating must be between 1 and 5")
+        return v
+
+    @field_validator("tags")
+    @classmethod
+    def tags_valid(cls, v):
+        if v is None:
+            return v
+        invalid = set(v) - VALID_TAGS
+        if invalid:
+            raise ValueError(f"Invalid tags: {invalid}")
+        return v
+
+class FeedbackOut(BaseModel):
     id: int
+    article_id: int
+    rating: int
+    tags: list[str] | None = None
+    comment: str | None = None
     created_at: datetime
     class Config:
         from_attributes = True

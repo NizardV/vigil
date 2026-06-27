@@ -139,8 +139,9 @@ class Feedback(Base):
     article_id: Mapped[int] = mapped_column(ForeignKey("articles.id", ondelete="CASCADE"))
     rating: Mapped[int] = mapped_column(
         SmallInteger,
-        CheckConstraint("rating IN (-1, 1)")
+        CheckConstraint("rating BETWEEN 1 AND 5")
     )
+    tags: Mapped[list[str] | None] = mapped_column(ARRAY(String), nullable=True)
     comment: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(TIMESTAMP, default=datetime.utcnow)
 

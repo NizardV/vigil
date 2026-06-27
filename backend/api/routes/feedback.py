@@ -20,10 +20,7 @@ async def create_feedback(
     article = await db.get(Article, payload.article_id)
     if not article:
         raise HTTPException(404, "Article not found")
-    if payload.rating not in (-1, 1):
-        raise HTTPException(400, "Rating must be 1 (👍) or -1 (👎)")
 
-    # Upsert : un seul feedback par user/article
     result = await db.execute(
         select(Feedback).where(
             Feedback.user_id == user_id,
@@ -34,6 +31,7 @@ async def create_feedback(
 
     if existing:
         existing.rating = payload.rating
+        existing.tags = payload.tags
         if payload.comment is not None:
             existing.comment = payload.comment
         await db.flush()
