@@ -34,6 +34,7 @@
     build: ./backend
     container_name: vigil_backend
     restart: unless-stopped
+    mem_limit: 1g
     env_file: .env
     ports:
       - "8000:8000"
@@ -49,6 +50,7 @@
     build: ./backend
     container_name: vigil_celery
     restart: unless-stopped
+    mem_limit: 1.5g
     env_file: .env
     command: celery -A workers.tasks worker --loglevel=info --concurrency=2
     depends_on:
@@ -63,6 +65,7 @@
     build: ./backend
     container_name: vigil_beat
     restart: unless-stopped
+    mem_limit: 1g
     env_file: .env
     command: celery -A workers.tasks beat --loglevel=info
     depends_on:
