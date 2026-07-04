@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.12.1](https://github.com/NizardV/vigil/compare/v0.12.0...v0.12.1) (2026-07-04)
+
+
+### Bug Fixes
+
+* add missing email-validator dependency for pydantic EmailStr ([476712b](https://github.com/NizardV/vigil/commit/476712bb0327c0e587c8fc069ce77ba47e998d5d))
+* add missing email-validator dependency for pydantic EmailStr ([fc8149c](https://github.com/NizardV/vigil/commit/fc8149c211f552479b98e2e120082fa8f744479c))
+* **auth:** Implement pending 2FA token for TOTP verification ([d472685](https://github.com/NizardV/vigil/commit/d4726850bde4c94cc25ac6eeb531252b1cf41157))
+* **auth:** Implement pending 2FA token for TOTP verification ([8deeb26](https://github.com/NizardV/vigil/commit/8deeb2657fb14a084bd94df520a9ec3cf757d0a9))
+
 ## [0.12.0](https://github.com/NizardV/vigil/compare/v0.11.0...v0.12.0) (2026-06-24)
 
 
