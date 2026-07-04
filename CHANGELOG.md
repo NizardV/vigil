@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.3](https://github.com/NizardV/vigil/compare/v0.12.2...v0.12.3) (2026-07-04)
+
+
+### Bug Fixes
+
+* add missing import for create_pending_2fa_token in auth routes ([61b6acd](https://github.com/NizardV/vigil/commit/61b6acd05f04a3b8ea4954a47af6229960fce9a5))
+* add missing import for create_pending_2fa_token in auth routes ([9654ca5](https://github.com/NizardV/vigil/commit/9654ca5d78a5801232babe0f9739924c64b96648))
+
 ## [0.12.2](https://github.com/NizardV/vigil/compare/v0.12.1...v0.12.2) (2026-07-04)
 
 
