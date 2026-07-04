@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.2](https://github.com/NizardV/vigil/compare/v0.12.1...v0.12.2) (2026-07-04)
+
+
+### Bug Fixes
+
+* move email-validator to backend/requirements.txt (correct location) ([b1a6c96](https://github.com/NizardV/vigil/commit/b1a6c96820f97f45575321d4ea3e43c003f6521a))
+* move email-validator to backend/requirements.txt (correct location) ([2557057](https://github.com/NizardV/vigil/commit/25570576214989c9fb10fa5d99c525630a8b6831))
+
 ## [0.12.1](https://github.com/NizardV/vigil/compare/v0.12.0...v0.12.1) (2026-07-04)
 
 
