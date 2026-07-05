@@ -1,3 +1,5 @@
+⚠️ Ce repo est archivé, le projet est scindé en vigil-backend, vigil-streamlit, vigil-infra
+
 # Vigil
 
 Automated tech watch platform: collects RSS feeds, scores articles with Gemini LLM, sends daily digests to Discord with an interactive feedback loop, and exposes a Streamlit dashboard for configuration.
