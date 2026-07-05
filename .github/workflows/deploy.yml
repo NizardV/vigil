@@ -63,7 +63,7 @@ jobs:
 
       - name: Build & Push backend
         id: build-backend
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v7
         with:
           context: ./backend
           push: true
@@ -74,7 +74,7 @@ jobs:
 
       - name: Build & Push streamlit
         id: build-streamlit
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v7
         with:
           context: ./streamlit
           push: true
