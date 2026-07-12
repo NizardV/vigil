@@ -1,13 +1,13 @@
 # API
 fastapi==0.139.0
-uvicorn[standard]==0.50.0
+uvicorn[standard]==0.51.0
 
 # BDD
 sqlalchemy==2.0.51
 asyncpg==0.31.0
 alembic==1.18.5
 psycopg2-binary==2.9.12
-pgvector==0.4.2
+pgvector==0.5.0
 
 # Celery
 celery==5.6.3
